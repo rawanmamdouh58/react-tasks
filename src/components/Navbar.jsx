@@ -1,12 +1,5 @@
 import styles from "./stiles.module.css";
-function Navbar() {
-  const links = [
-    { title: "Home", url: "/" },
-    { title: "About", url: "/" },
-    { title: "servise", url: "/" },
-    { title: "contact", url: "/" },
-    { title: "profile", url: "/" },
-  ];
+function Navbar({ links }) {
   return (
     <nav>
       <ul className={styles.list}>
